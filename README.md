@@ -1,3 +1,10 @@
+Witaj!
+Oto gra w wisielca.
+Odgadnij hasło, klikając w wybrane przez Ciebie literki po prawej stronie.
+Powodzenia!;)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
