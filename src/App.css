@@ -1,36 +1,40 @@
 .App {
-  text-align: center;
   font-size: 28px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 950px;
   justify-self: center;
   align-self: center;
 }
 
 .App-pswd {
-
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 48px;
 }
 
 .App-container {
   display: flex;
   justify-content: center;
-  
 }
 
 .border {
   border-style: solid;
+  border-width: 2px;
   border-color: rgb(99, 99, 99);
   border-radius: 15px;
   padding: 5px;
 }
 
 .App-img {
-  
+  width: 450px;
+  margin: 15px;
 }
 
 .App-alph {
-
+  width: 450px;
+  margin: 15px;
 }
