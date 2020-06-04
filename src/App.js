@@ -58,9 +58,10 @@ function App() {
     if (!hasChanged) {
       document.getElementById('image').src = images[imgCounter];
       setImgCounter(imgCounter + 1);
+      if (imgCounter === 9) alert('Wisisz!');
     }
   }
-  
+
   return (
     <div className='App border'>
       <div id='pswd' className='App-pswd'>
@@ -77,6 +78,7 @@ function App() {
                 {value}
               </div>
             );
+
           })}
         </div>
       </div>
