@@ -62,3 +62,20 @@
   color: white;
   cursor: pointer;
 }
+
+.App-lose {
+  color: rgb(202, 0, 0);
+}
+
+.App-win {
+  color: rgb(45, 143, 15);
+}
+
+.App-again {
+  color: rgb(216, 199, 199);
+  cursor: pointer;
+}
+
+.App-again:hover {
+  color: white;
+}

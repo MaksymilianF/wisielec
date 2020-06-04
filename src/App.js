@@ -14,9 +14,10 @@ import s9 from './img/s9.jpg';
 function App() {
   const array = ['A', 'Ą', 'B', 'C', 'Ć', 'D', 'E', 'Ę', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'Ł', 'M', 'N', 'Ń', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'Ś', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ż', 'Ź'];
   const images = [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9];
-  const password = 'Lepszy wróbel w garści niż gołąb na dachu';
+  const password = 'Uśmiechnij się';
   const [pswd, setPswd] = useState(convertPswdToHidden(password));
   const [imgCounter, setImgCounter] = useState(1);
+  const [win, setWin] = useState(false);
 
   function convertToArray(password) {
     let pswdArray = [];
@@ -45,6 +46,7 @@ function App() {
   function checkLetter(char) {
     let array = convertToArray(pswd);
     let hasChanged = false;
+    
     for (let i=0; i < password.length; i++) {
       if (char === password.charAt(i).toUpperCase()) {
         array[i] = char;
@@ -54,12 +56,33 @@ function App() {
       document.getElementById('letter' + char).style.borderColor = "rgb(50, 50, 50)";
       document.getElementById('letter' + char).style.cursor = "default";
     }
+    
     setPswd(convertToString(array));
+    
     if (!hasChanged) {
       document.getElementById('image').src = images[imgCounter];
       setImgCounter(imgCounter + 1);
-      if (imgCounter === 9) alert('Wisisz!');
     }
+
+    if (convertToString(array) === password.toUpperCase()) setWin(true);
+    // alert(convertToString(array));
+    // alert(password.toUpperCase());
+  }
+
+  function endGame() {
+    return (
+      <div>
+        {win ?
+          <p className='App-win'>Gratulacje! Udało Ci się odgadnąć hasło.</p> :
+          <p className='App-lose'>Niestety nie udało Ci się odgadnąć hasła.</p>
+        }
+        <p className='App-again' onClick={reloadPage}>Jeszcze raz?</p>
+      </div>
+    );
+  }
+
+  function reloadPage() {
+    window.location.reload(false);
   }
 
   return (
@@ -72,7 +95,8 @@ function App() {
           <img id='image' src={images[0]} alt='wisielec' />
         </div>
         <div id='alphabet' className='App-alph border'>
-          {array.map((value) => {
+          {(imgCounter > 9 || win) ? endGame() :
+            array.map((value) => {
             return(
               <div id={'letter' + value} className='App-letter' onClick={() => checkLetter(value)}>
                 {value}
