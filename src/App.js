@@ -14,7 +14,31 @@ import s9 from './img/s9.jpg';
 function App() {
   const array = ['A', 'Ą', 'B', 'C', 'Ć', 'D', 'E', 'Ę', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'Ł', 'M', 'N', 'Ń', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'Ś', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ż', 'Ź'];
   const images = [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9];
-  const password = 'Uśmiechnij się';
+  const sentences = [
+    'Nie zadzieraj nosa',
+    'Gość w dom Bóg w dom',
+    'Bez pracy nie ma kołaczy',
+    'Fortuna kołem się toczy',
+    'Nie chwal dnia przed zachodem słońca',
+    'Apetyt rośnie w miarę jedzenia',
+    'Co nagle to po diable',
+    'Broda mędrcem nie czyni',
+    'Gdy kota nie ma myszy harcują',
+    'Kto mieczem wojuje ten od miecza ginie',
+    'Kto pyta nie błądzi',
+    'Nosił wilk razy kilka ponieśli i wilka',
+    'Ściany mają uszy',
+    'Z dużej chmury mały deszcz',
+    'Co ma wisieć nie utonie',
+    'Grosz do grosza a będzie kokosza',
+    'Baba z wozu koniom lżej',
+    'Bez boga ani do proga',
+    'Jak u Pana Boga za piecem',
+    'Przez żołądek do serca',
+    'Darowanemu koniowi w zęby się nie zagląda',
+    'Kuć żelazo póki gorące'
+  ];
+  const [password, setPassword] = useState(sentences[Math.floor(Math.random() * sentences.length)]);
   const [pswd, setPswd] = useState(convertPswdToHidden(password));
   const [imgCounter, setImgCounter] = useState(1);
   const [win, setWin] = useState(false);
@@ -45,28 +69,26 @@ function App() {
 
   function checkLetter(char) {
     let array = convertToArray(pswd);
-    let hasChanged = false;
     
     for (let i=0; i < password.length; i++) {
       if (char === password.charAt(i).toUpperCase()) {
         array[i] = char;
-        hasChanged = true;
+        document.getElementById('letter' + char).setAttribute("disabled", true);
       }
-      document.getElementById('letter' + char).style.color = "rgb(50, 50, 50)";
-      document.getElementById('letter' + char).style.borderColor = "rgb(50, 50, 50)";
-      document.getElementById('letter' + char).style.cursor = "default";
     }
-    
     setPswd(convertToString(array));
-    
-    if (!hasChanged) {
+      
+    if (!document.getElementById('letter' + char).getAttribute("disabled")) {
       document.getElementById('image').src = images[imgCounter];
       setImgCounter(imgCounter + 1);
     }
 
+    document.getElementById('letter' + char).style.color = 'rgb(50, 50, 50)';
+    document.getElementById('letter' + char).style.borderColor = 'rgb(50, 50, 50)';
+    document.getElementById('letter' + char).style.cursor = 'default';
+    document.getElementById('letter' + char).setAttribute("disabled", true);
+
     if (convertToString(array) === password.toUpperCase()) setWin(true);
-    // alert(convertToString(array));
-    // alert(password.toUpperCase());
   }
 
   function endGame() {
@@ -102,7 +124,6 @@ function App() {
                 {value}
               </div>
             );
-
           })}
         </div>
       </div>
