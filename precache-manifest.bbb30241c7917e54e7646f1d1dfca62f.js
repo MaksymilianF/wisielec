@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1da8f7150a42d475d189800e5a3b24c",
+    "revision": "70c9066fde7e1eb373c4ad87c3d45d39",
     "url": "/wisielec/index.html"
   },
   {
-    "revision": "387b7e6a31b501eadada",
-    "url": "/wisielec/static/css/main.cc1cfe2e.chunk.css"
+    "revision": "c896b4cd7dd2145220bb",
+    "url": "/wisielec/static/css/main.aa81e469.chunk.css"
   },
   {
     "revision": "41deabde3049a6649e77",
@@ -16,12 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wisielec/static/js/2.eef7ec12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "387b7e6a31b501eadada",
-    "url": "/wisielec/static/js/main.42398604.chunk.js"
+    "revision": "c896b4cd7dd2145220bb",
+    "url": "/wisielec/static/js/main.9a6fd1ec.chunk.js"
   },
   {
     "revision": "4795f7b63991728381de",
     "url": "/wisielec/static/js/runtime-main.e2c8a394.js"
+  },
+  {
+    "revision": "46f0a3ad815962005753c02c4181aadc",
+    "url": "/wisielec/static/media/UbuntuMono-Bold.46f0a3ad.ttf"
+  },
+  {
+    "revision": "e097b71641f2524e09820d9122b7e910",
+    "url": "/wisielec/static/media/UbuntuMono-Regular.e097b716.ttf"
   },
   {
     "revision": "1db8c9491623f182f8f5934fb142e886",
