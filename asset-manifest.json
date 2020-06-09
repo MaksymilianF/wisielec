@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wisielec/static/css/main.aa81e469.chunk.css",
-    "main.js": "/wisielec/static/js/main.9a6fd1ec.chunk.js",
-    "main.js.map": "/wisielec/static/js/main.9a6fd1ec.chunk.js.map",
+    "main.css": "/wisielec/static/css/main.030ef45b.chunk.css",
+    "main.js": "/wisielec/static/js/main.53e43005.chunk.js",
+    "main.js.map": "/wisielec/static/js/main.53e43005.chunk.js.map",
     "runtime-main.js": "/wisielec/static/js/runtime-main.e2c8a394.js",
     "runtime-main.js.map": "/wisielec/static/js/runtime-main.e2c8a394.js.map",
     "static/js/2.eef7ec12.chunk.js": "/wisielec/static/js/2.eef7ec12.chunk.js",
     "static/js/2.eef7ec12.chunk.js.map": "/wisielec/static/js/2.eef7ec12.chunk.js.map",
     "index.html": "/wisielec/index.html",
-    "precache-manifest.bbb30241c7917e54e7646f1d1dfca62f.js": "/wisielec/precache-manifest.bbb30241c7917e54e7646f1d1dfca62f.js",
+    "precache-manifest.99dcc37081a63b2226005cac203b50b8.js": "/wisielec/precache-manifest.99dcc37081a63b2226005cac203b50b8.js",
     "service-worker.js": "/wisielec/service-worker.js",
-    "static/css/main.aa81e469.chunk.css.map": "/wisielec/static/css/main.aa81e469.chunk.css.map",
+    "static/css/main.030ef45b.chunk.css.map": "/wisielec/static/css/main.030ef45b.chunk.css.map",
     "static/js/2.eef7ec12.chunk.js.LICENSE.txt": "/wisielec/static/js/2.eef7ec12.chunk.js.LICENSE.txt",
     "static/media/UbuntuMono-Bold.ttf": "/wisielec/static/media/UbuntuMono-Bold.46f0a3ad.ttf",
     "static/media/UbuntuMono-Regular.ttf": "/wisielec/static/media/UbuntuMono-Regular.e097b716.ttf",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.e2c8a394.js",
     "static/js/2.eef7ec12.chunk.js",
-    "static/css/main.aa81e469.chunk.css",
-    "static/js/main.9a6fd1ec.chunk.js"
+    "static/css/main.030ef45b.chunk.css",
+    "static/js/main.53e43005.chunk.js"
   ]
 }

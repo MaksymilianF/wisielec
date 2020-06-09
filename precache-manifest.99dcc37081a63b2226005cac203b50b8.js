@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70c9066fde7e1eb373c4ad87c3d45d39",
+    "revision": "803d04124dc2ed6c64d6f8568b87921c",
     "url": "/wisielec/index.html"
   },
   {
-    "revision": "c896b4cd7dd2145220bb",
-    "url": "/wisielec/static/css/main.aa81e469.chunk.css"
+    "revision": "c049cc79ea80c1af1e76",
+    "url": "/wisielec/static/css/main.030ef45b.chunk.css"
   },
   {
     "revision": "41deabde3049a6649e77",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wisielec/static/js/2.eef7ec12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c896b4cd7dd2145220bb",
-    "url": "/wisielec/static/js/main.9a6fd1ec.chunk.js"
+    "revision": "c049cc79ea80c1af1e76",
+    "url": "/wisielec/static/js/main.53e43005.chunk.js"
   },
   {
     "revision": "4795f7b63991728381de",
