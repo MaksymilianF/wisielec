@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wisielec/static/css/main.030ef45b.chunk.css",
+    "main.css": "/wisielec/static/css/main.23c7b655.chunk.css",
     "main.js": "/wisielec/static/js/main.53e43005.chunk.js",
     "main.js.map": "/wisielec/static/js/main.53e43005.chunk.js.map",
     "runtime-main.js": "/wisielec/static/js/runtime-main.e2c8a394.js",
@@ -8,9 +8,9 @@
     "static/js/2.eef7ec12.chunk.js": "/wisielec/static/js/2.eef7ec12.chunk.js",
     "static/js/2.eef7ec12.chunk.js.map": "/wisielec/static/js/2.eef7ec12.chunk.js.map",
     "index.html": "/wisielec/index.html",
-    "precache-manifest.99dcc37081a63b2226005cac203b50b8.js": "/wisielec/precache-manifest.99dcc37081a63b2226005cac203b50b8.js",
+    "precache-manifest.af80f48b6abdb2aad9066dfeaaaf66db.js": "/wisielec/precache-manifest.af80f48b6abdb2aad9066dfeaaaf66db.js",
     "service-worker.js": "/wisielec/service-worker.js",
-    "static/css/main.030ef45b.chunk.css.map": "/wisielec/static/css/main.030ef45b.chunk.css.map",
+    "static/css/main.23c7b655.chunk.css.map": "/wisielec/static/css/main.23c7b655.chunk.css.map",
     "static/js/2.eef7ec12.chunk.js.LICENSE.txt": "/wisielec/static/js/2.eef7ec12.chunk.js.LICENSE.txt",
     "static/media/UbuntuMono-Bold.ttf": "/wisielec/static/media/UbuntuMono-Bold.46f0a3ad.ttf",
     "static/media/UbuntuMono-Regular.ttf": "/wisielec/static/media/UbuntuMono-Regular.e097b716.ttf",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.e2c8a394.js",
     "static/js/2.eef7ec12.chunk.js",
-    "static/css/main.030ef45b.chunk.css",
+    "static/css/main.23c7b655.chunk.css",
     "static/js/main.53e43005.chunk.js"
   ]
 }
