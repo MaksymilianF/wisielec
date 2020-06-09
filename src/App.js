@@ -38,7 +38,7 @@ function App() {
     'Darowanemu koniowi w zęby się nie zagląda',
     'Kuć żelazo póki gorące'
   ];
-  const [password, setPassword] = useState(sentences[Math.floor(Math.random() * sentences.length)]);
+  const [password] = useState(sentences[Math.floor(Math.random() * sentences.length)]);
   const [pswd, setPswd] = useState(convertPswdToHidden(password));
   const [imgCounter, setImgCounter] = useState(1);
   const [win, setWin] = useState(false);
@@ -93,7 +93,7 @@ function App() {
 
   function endGame() {
     return (
-      <div>
+      <div className='App-end-container'>
         {win ?
           <p className='App-win'>Gratulacje! Udało Ci się odgadnąć hasło.</p> :
           <p className='App-lose'>Niestety nie udało Ci się odgadnąć hasła.</p>
